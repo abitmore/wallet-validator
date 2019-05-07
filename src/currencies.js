@@ -209,6 +209,11 @@ var CURRENCIES = [{
     name: 'raiblocks',
     symbol: 'xrb',
     validator: NANOValidator,
+},{
+    name: 'postcoin',
+    symbol: 'post',
+    addressTypes: {prod: ['37', '1c'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
