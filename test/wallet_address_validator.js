@@ -382,6 +382,14 @@ describe('WAValidator.validate()', function () {
             valid('xrb_1q79ahdr36uqn38p5tp5sqwkn73rnpj1k8obtuetdbjcx37d5gahhd1u9cuh', 'nano');
             valid('nano_1q79ahdr36uqn38p5tp5sqwkn73rnpj1k8obtuetdbjcx37d5gahhd1u9cuh', 'nano');
         });
+
+        it('should return true for correct postcoin addresses', function () {
+            valid('PLMXMM3S4KPBpGE1QE4vM6NCh5VCGfdzuo', 'postcoin');
+            valid('PMVAVBjVu62ZtWj2V97pzweocfyi7wzijy', 'postcoin');
+            valid('PWU5zwWfwkJ6qe2oULt3tpytPyrjGZ1DcR', 'postcoin');
+            valid('PSPFeBDrEYkpDrzUGGeez4d7LgK2agQFcN', 'postcoin');
+            valid('PBr8QAv864poZH5G3HUQiqT9P8DcxQr7k6', 'POST');
+        });
     });
 
     describe('invalid results', function () {
@@ -594,6 +602,10 @@ describe('WAValidator.validate()', function () {
             invalid('nano_1f5e4w33ndqbkx4bw5jtp13kp5xghebfxcmw9hdt1f7goid1s4373w6tjdgu', 'nano');
             invalid('xrb_1111111112111111111111111111111111111111111111111111hifc8npp', 'nano');
             invalid('nano_111111111111111111111111111111111111111111111111111hifc8npp', 'nano');
+        });
+
+        it('should return false for incorrect postcoin addresses', function () {
+            commonTests('postcoin');
         });
     });
 });
