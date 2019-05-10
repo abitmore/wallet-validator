@@ -94,6 +94,7 @@ npm install wallet-address-validator
 
 * PostCoin/POST, `'postcoin'` or `'POST'`
 
+
 ### Usage example
 
 #### Node
