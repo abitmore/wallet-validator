@@ -92,8 +92,6 @@ npm install wallet-address-validator
 
 * ZenCash/ZEN, `'zencash'` or `'ZEN'`
 
-* PostCoin/POST, `'postcoin'` or `'POST'`
-
 
 ### Usage example
 
