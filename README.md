@@ -96,6 +96,8 @@ npm install wallet-address-validator
 
 * Nobtcoin/NOBT, `'nobtcoin'` or `'NOBT'`
 
+* VeriCoin/VRC, `'vericoin'` or `'VRC'`
+
 
 ### Usage example
 
