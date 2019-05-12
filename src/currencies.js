@@ -214,6 +214,11 @@ var CURRENCIES = [{
     symbol: 'post',
     addressTypes: {prod: ['37', '1c'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'nobtcoin',
+    symbol: 'nobt',
+    addressTypes: {prod: ['0f', '55'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
