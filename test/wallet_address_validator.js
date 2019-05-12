@@ -390,6 +390,14 @@ describe('WAValidator.validate()', function () {
             valid('PSPFeBDrEYkpDrzUGGeez4d7LgK2agQFcN', 'postcoin');
             valid('PBr8QAv864poZH5G3HUQiqT9P8DcxQr7k6', 'POST');
         });
+
+        it('should return true for correct nobtcoin addresses', function () {
+            valid('7PBd9WhCesCkxe4MLz3hGg43QJzAUh2qR5', 'nobtcoin');
+            valid('7S92MyxcH2bryh5LkpZUDfAuFrqRLhn1hc', 'nobtcoin');
+            valid('7KKVdy36VCg22RAiJu5mXEy5yVzAb2LAGQ', 'nobtcoin');
+            valid('7C3AnBLnqVuZV12StgoLtG8r2qqKiypEpm', 'nobtcoin');
+            valid('7BrqqDeHPr1Wz3by2RhAq3TvRSwB4nAAde', 'NOBT');
+        });
     });
 
     describe('invalid results', function () {
@@ -606,6 +614,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect postcoin addresses', function () {
             commonTests('postcoin');
+        });
+
+        it('should return false for incorrect nobtcoin addresses', function () {
+            commonTests('nobtcoin');
         });
     });
 });
