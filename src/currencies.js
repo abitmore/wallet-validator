@@ -224,6 +224,11 @@ var CURRENCIES = [{
     symbol: 'vrc',
     addressTypes: {prod: ['46', '84'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'verium',
+    symbol: 'vrm',
+    addressTypes: {prod: ['46', '84'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
