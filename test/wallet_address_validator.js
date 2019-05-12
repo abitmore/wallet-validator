@@ -406,6 +406,14 @@ describe('WAValidator.validate()', function () {
             valid('VRixSzymyKcNqfyHs3xopVyZV5cVXEWn9p', 'vericoin');
             valid('VK3eZetdYnise2pzAK3Da3DDwyCbzzjNB7', 'VRC');
         });
+
+        it('should return true for correct verium addresses', function () {
+            valid('VNhdp3sZu1gPHRiX7mFaZWAbbG17598u9w', 'verium');
+            valid('VYgRwKK4wnaQQQeCakqb7iMiQ3naqi6XAw', 'verium');
+            valid('VCyQbu6gJBsYNe2W2nBacx2GzR8zowVfao', 'verium');
+            valid('VFe9XzzKKhEHeSoPKWhVkrZrPYpZQrQkJF', 'verium');
+            valid('VWPG4HB22HbBNgbWoaSAzjApUMJ52Kq4kv', 'VRM');
+        });
     });
 
     describe('invalid results', function () {
@@ -630,6 +638,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect vericoin addresses', function () {
             commonTests('vericoin');
+        });
+
+        it('should return false for incorrect verium addresses', function () {
+            commonTests('verium');
         });
     });
 });
