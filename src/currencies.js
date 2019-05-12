@@ -219,6 +219,11 @@ var CURRENCIES = [{
     symbol: 'nobt',
     addressTypes: {prod: ['0f', '55'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'vericoin',
+    symbol: 'vrc',
+    addressTypes: {prod: ['46', '84'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
