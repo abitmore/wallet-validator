@@ -398,6 +398,14 @@ describe('WAValidator.validate()', function () {
             valid('7C3AnBLnqVuZV12StgoLtG8r2qqKiypEpm', 'nobtcoin');
             valid('7BrqqDeHPr1Wz3by2RhAq3TvRSwB4nAAde', 'NOBT');
         });
+
+        it('should return true for correct vericoin addresses', function () {
+            valid('VFPQEB3tHGubDvBQP5eSrpsdWnAahHUFfX', 'vericoin');
+            valid('VNCyBYA8g5LAYyRG6nhZxAawxayymBLu2z', 'vericoin');
+            valid('VX8oTbJMx2dcsC6pWej8vgPm1pwDftyFZs', 'vericoin');
+            valid('VRixSzymyKcNqfyHs3xopVyZV5cVXEWn9p', 'vericoin');
+            valid('VK3eZetdYnise2pzAK3Da3DDwyCbzzjNB7', 'VRC');
+        });
     });
 
     describe('invalid results', function () {
@@ -618,6 +626,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect nobtcoin addresses', function () {
             commonTests('nobtcoin');
+        });
+
+        it('should return false for incorrect vericoin addresses', function () {
+            commonTests('vericoin');
         });
     });
 });
