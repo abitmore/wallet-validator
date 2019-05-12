@@ -98,6 +98,8 @@ npm install wallet-address-validator
 
 * VeriCoin/VRC, `'vericoin'` or `'VRC'`
 
+* VeriumReserve/VRM, `'verium'` or `'VRM'`
+
 
 ### Usage example
 
