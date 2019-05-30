@@ -229,6 +229,10 @@ var CURRENCIES = [{
     symbol: 'vrm',
     addressTypes: {prod: ['46', '84'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'smilo',
+    symbol: 'xsm',
+    validator: ETHValidator,
 }];
 
 
