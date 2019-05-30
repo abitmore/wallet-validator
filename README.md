@@ -100,6 +100,8 @@ npm install wallet-address-validator
 
 * VeriumReserve/VRM, `'verium'` or `'VRM'`
 
+* Smilo/XSM, `'smilo'` or `'XSM'`
+
 
 ### Usage example
 
