@@ -106,6 +106,8 @@ npm install wallet-address-validator
 
 * Universe/UNI, `'universe'` or `'UNI'`
 
+* Spectrecoin/XSPEC, `'spectre'` or `'XSPEC'`
+
 ### Usage example
 
 #### Node
