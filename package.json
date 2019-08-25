@@ -35,11 +35,11 @@
     ],
     "version": "0.2.5",
     "author": "Tomek Kolasa <tomek@kolasa.me>",
-    "homepage": "https://github.com/technologiespro/wallet-address-validator",
+    "homepage": "https://github.com/technologiespro/wallet-validator",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/technologiespro/wallet-address-validator.git"
+        "url": "https://github.com/technologiespro/wallet-validator.git"
     },
     "main": "src/wallet_address_validator",
     "engines": {
