@@ -108,6 +108,8 @@ npm install wallet-address-validator
 
 * Spectrecoin/XSPEC, `'spectre'` or `'XSPEC'`
 
+* 42-coin/42, `'42coin'` or `'42'`
+
 ### Usage example
 
 #### Node
