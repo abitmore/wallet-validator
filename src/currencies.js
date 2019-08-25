@@ -253,6 +253,11 @@ var CURRENCIES = [{
     symbol: '42',
     addressTypes: {prod: ['05', '08'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'smartholdem',
+    symbol: 'sth',
+    addressTypes: {prod: ['ff', '3f'], testnet: ['01', '1e']},
+    validator: BTCValidator
 }];
 
 
