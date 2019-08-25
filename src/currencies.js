@@ -233,6 +233,11 @@ var CURRENCIES = [{
     name: 'smilo',
     symbol: 'xsm',
     validator: ETHValidator,
+},{
+    name: 'zenzo',
+    symbol: 'znz',
+    addressTypes: {prod: ['46', '51'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
