@@ -248,6 +248,11 @@ var CURRENCIES = [{
     symbol: 'xspec',
     addressTypes: {prod: ['55', '3f'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: '42coin',
+    symbol: '42',
+    addressTypes: {prod: ['05', '08'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
