@@ -258,6 +258,11 @@ var CURRENCIES = [{
     symbol: 'sth',
     addressTypes: {prod: ['ff', '3f'], testnet: ['01', '1e']},
     validator: BTCValidator
+},{
+    name: 'steep',
+    symbol: 'steep',
+    addressTypes: {prod: ['3f', '7d'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
