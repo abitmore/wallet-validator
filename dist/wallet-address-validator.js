@@ -2395,7 +2395,7 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-        // console.log('checksum', cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
+        //console.log('checksum', cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
 
@@ -5775,6 +5775,16 @@ var CURRENCIES = [{
     name: 'zenzo',
     symbol: 'znz',
     addressTypes: {prod: ['46', '51'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+},{
+    name: 'universe',
+    symbol: 'uni',
+    addressTypes: {prod: ['55', '44'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+},{
+    name: 'spectre',
+    symbol: 'xspec',
+    addressTypes: {prod: ['55', '3f'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }];
 
