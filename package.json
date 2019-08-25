@@ -1,6 +1,6 @@
 {
-    "name": "wallet-address-validator",
-    "description": "Wallet address validator for Bitcoin and other Altcoins.",
+    "name": "wallet-validator",
+    "description": "Fast Wallet address validator for Bitcoin and other Altcoins.",
     "keywords": [
         "smartholdem",
         "sth",
@@ -35,7 +35,7 @@
     ],
     "version": "0.2.5",
     "author": "Tomek Kolasa <tomek@kolasa.me>",
-    "homepage": "https://github.com/ognus/wallet-address-validator",
+    "homepage": "https://github.com/technologiespro/wallet-address-validator",
     "license": "MIT",
     "repository": {
         "type": "git",
