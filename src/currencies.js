@@ -263,6 +263,11 @@ var CURRENCIES = [{
     symbol: 'steep',
     addressTypes: {prod: ['3f', '7d'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'evergreen',
+    symbol: 'egc',
+    addressTypes: {prod: ['55', '21'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
