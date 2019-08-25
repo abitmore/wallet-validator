@@ -465,6 +465,13 @@ describe('WAValidator.validate()', function () {
             valid('SNiSmCHNbULHX6VGR9ZaTgvw45cgZdyf2A', 'sth');
         });
 
+        it('should return true for correct Steepcoin addresses', function () {
+            valid('sUETEnMawsqE6GTXgX7XTBpe6Saa5SsSqb', 'STEEP');
+            valid('sXfzHAATvuRPgKa7z3HFEUuDN5n26qJeeH', 'steep');
+            valid('sNrsQ7CtGWH8XMUXTeDdrxBDRa1PmG376G', 'steep');
+            valid('sKE382aGXE2DX45tR9Pvkv55ih6W6YdpLV', 'steep');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -721,6 +728,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect SmartHoldem addresses', function () {
             commonTests('sth');
+        });
+
+        it('should return false for incorrect steep addresses', function () {
+            commonTests('steep');
         });
 
     });
