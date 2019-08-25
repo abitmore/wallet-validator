@@ -444,6 +444,13 @@ describe('WAValidator.validate()', function () {
             valid('URHAYQ9iL1B88uou7nWydCniBw4GKvxnZF', 'UNI');
         });
 
+        it('should return true for correct Spectrecoin addresses', function () {
+            valid('SVzzccdxXwp9UovUmH7tdns1qXHpP44BgZ', 'spectre');
+            valid('SWRNCEYEtP2QMW4Vy3GpHzHvYBw985QoBv', 'xspec');
+            valid('SUrEKDFqM9aD1a3514AMRXBx6mgR2BAvb4', 'XSPEC');
+            valid('SeZqSvLBQXowcHVL8F4Wmwsuddu997AX8i', 'XSPEC');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -688,6 +695,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect universe addresses', function () {
             commonTests('universe');
+        });
+
+        it('should return false for incorrect spectre addresses', function () {
+            commonTests('spectre');
         });
     });
 });
