@@ -472,6 +472,13 @@ describe('WAValidator.validate()', function () {
             valid('sKE382aGXE2DX45tR9Pvkv55ih6W6YdpLV', 'steep');
         });
 
+        it('should return true for correct evergreen addresses', function () {
+            valid('EfPTyLqYk5JkZExiMegXKrufEkYP2ep3Lr', 'EGC');
+            valid('EJPM2tLLpGnrtWhfbQYgiktVYj1MumfRqh', 'evergreen');
+            valid('EfKC3gyz8GqT3j5fp9Q6Maj5Z4UNT7dLjh', 'egc');
+            valid('EShn8S3brVgZjuBASExCE1hmaDp5GfAvZj', 'egc');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -732,6 +739,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect steep addresses', function () {
             commonTests('steep');
+        });
+
+        it('should return false for incorrect evergreen addresses', function () {
+            commonTests('evergreen');
         });
 
     });
