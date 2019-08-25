@@ -241,12 +241,12 @@ var CURRENCIES = [{
 },{
     name: 'universe',
     symbol: 'uni',
-    addressTypes: {prod: ['19', '44'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['55', '44'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'spectre',
     symbol: 'xspec',
-    addressTypes: {prod: ['19', '3f'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['55', '3f'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }];
 
