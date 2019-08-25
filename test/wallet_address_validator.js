@@ -429,6 +429,14 @@ describe('WAValidator.validate()', function () {
             valid('0xdbF03B407c01E7cD3CBea99509d93f8DDDC8C6FB', 'XSM');
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'XSM');
         });
+
+        it('should return true for correct ZENZO addresses', function () {
+            valid('Zq2W3QvQeJi82Mm4jJ8JJCRUrfuqA2VH7d', 'zenzo');
+            valid('ZzashRFQoYBXmzr9VGbUUpcAwGNi9ptxqw', 'znz');
+            valid('Zun7EuKZHoZgkuwMFFd6i8ZKr3FFu4Rd35', 'ZNZ');
+            valid('ZkC4jacJWMscjULWxydb7928wqXx8S8BJZ', 'ZNZ');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -665,6 +673,10 @@ describe('WAValidator.validate()', function () {
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'smilo');
             invalid('aFf4d6793f584a473348ebA058deb8caad77a2885', 'smilo');
             invalid('0xff4d6793F584a473', 'smilo');
+        });
+
+        it('should return false for incorrect dash addresses', function () {
+            commonTests('zenzo');
         });
     });
 });
