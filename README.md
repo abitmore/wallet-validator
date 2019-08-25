@@ -104,6 +104,8 @@ npm install wallet-address-validator
 
 * ZENZO/ZNZ, `'zenzo'` or `'ZNZ'`
 
+* Universe/UNI, `'universe'` or `'UNI'`
+
 ### Usage example
 
 #### Node
