@@ -458,6 +458,13 @@ describe('WAValidator.validate()', function () {
             valid('4M5yjQETzE7dUBUKgUddfGsfHYcfWxQwjg', '42');
         });
 
+        it('should return true for correct SmartHoldem addresses', function () {
+            valid('STDJjaureBxczEPsTBjFxPcgjHQN7mMDb6', 'STH');
+            valid('SRgE2ndckJfrWHQhgBSsTLojTT28EgYanT', 'smartholdem');
+            valid('SZauWR2SgRTpGRx2ZadeLbxMJ22myhp1GD', 'sth');
+            valid('SNiSmCHNbULHX6VGR9ZaTgvw45cgZdyf2A', 'sth');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -710,6 +717,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect 42-coin addresses', function () {
             commonTests('42');
+        });
+
+        it('should return false for incorrect SmartHoldem addresses', function () {
+            commonTests('sth');
         });
 
     });
