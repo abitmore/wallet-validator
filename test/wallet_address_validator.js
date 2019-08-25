@@ -437,6 +437,13 @@ describe('WAValidator.validate()', function () {
             valid('ZkC4jacJWMscjULWxydb7928wqXx8S8BJZ', 'ZNZ');
         });
 
+        it('should return true for correct Universe addresses', function () {
+            valid('UihGPPbSK1LEh3cM2gLqYrc9UJnY23DvGc', 'universe');
+            valid('UeGiqc1VTGxAbimkotZARK44isnk5cHwQ1', 'uni');
+            valid('UkKRRyGywbr6TpejGpzcGFwCiPviEwoKig', 'UNI');
+            valid('URHAYQ9iL1B88uou7nWydCniBw4GKvxnZF', 'UNI');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -675,8 +682,12 @@ describe('WAValidator.validate()', function () {
             invalid('0xff4d6793F584a473', 'smilo');
         });
 
-        it('should return false for incorrect dash addresses', function () {
+        it('should return false for incorrect zenzo addresses', function () {
             commonTests('zenzo');
+        });
+
+        it('should return false for incorrect universe addresses', function () {
+            commonTests('universe');
         });
     });
 });
