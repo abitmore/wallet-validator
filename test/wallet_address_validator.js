@@ -451,6 +451,13 @@ describe('WAValidator.validate()', function () {
             valid('SeZqSvLBQXowcHVL8F4Wmwsuddu997AX8i', 'XSPEC');
         });
 
+        it('should return true for correct 42-coin addresses', function () {
+            valid('4LChCd9to8DY8uQpJDsWST7q9o8iUnakCG', '42coin');
+            valid('4bwnfH38aYLKDCcCamKrDVqzboJxaQv99f', '42');
+            valid('4GEVVaU7LPfDrUCTPEESKwRanS8SLSpVZH', '42');
+            valid('4M5yjQETzE7dUBUKgUddfGsfHYcfWxQwjg', '42');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -700,5 +707,10 @@ describe('WAValidator.validate()', function () {
         it('should return false for incorrect spectre addresses', function () {
             commonTests('spectre');
         });
+
+        it('should return false for incorrect 42-coin addresses', function () {
+            commonTests('42');
+        });
+
     });
 });
