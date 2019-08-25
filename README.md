@@ -110,6 +110,8 @@ npm install wallet-address-validator
 
 * 42-coin/42, `'42coin'` or `'42'`
 
+* SmartHoldem/STH, `'smartholdem'` or `'STH'`
+
 ### Usage example
 
 #### Node
