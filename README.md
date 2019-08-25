@@ -1,7 +1,7 @@
 # wallet-address-validator
 Simple wallet address validator for validating Bitcoin and other altcoins addresses in **Node.js and browser**.
 
-Forked from [ryanralph/altcoin-address](https://github.com/ryanralph/altcoin-address).
+Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
 
 **File size is ~22 kB (minifed and gzipped)**.
 
@@ -9,7 +9,7 @@ Forked from [ryanralph/altcoin-address](https://github.com/ryanralph/altcoin-add
 
 ### NPM
 ```
-npm install wallet-address-validator
+npm install wallet-validator
 ```
 
 ### Browser
@@ -31,7 +31,6 @@ npm install wallet-address-validator
 ### Supported crypto currencies
 
 * Auroracoin/AUR, `'auroracoin'` or `'AUR'`
-
 * Bankex/BKX, `'bankex'` or `'BKX'`
 * BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
 * Biocoin/BIO, `'biocoin'` or `'BIO'`
@@ -40,76 +39,46 @@ npm install wallet-address-validator
 * BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
 * BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 * BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`
-
 * Callisto/CLO, `'callisto'` or `'CLO'`
-
 * Dash, `'dash'` or `'DASH'`
 * Decred/DCR, `'decred'` or `'DCR'`
 * Digibyte/DGB, `'digibyte'` or `'DGB'`
 * Dogecoin/DOGE, `'dogecoin'` or `'DOGE'`
-
 * Ethereum/ETH, `'ethereum'` or `'ETH'`
 * EthereumClassic/ETH, `'ethereumclassic'` or `'ETC'`
 * EthereumZero/ETZ, `'etherzero'` or `'ETZ'`
-
 * Freicoin/FRC, `'freicoin'` or `'FRC'`
-
 * Garlicoin/GRLC, `'garlicoin'` or `'GRLC'`
-
 * Hush/HUSH, `'hush'` or `'HUSH'`
-
 * Komodo/KMD, `'komodo'` or `'KMD'`
-
 * Litecoin/LTC, `'litecoin'` or `'LTC'`
-
 * Megacoin/MEC, `'megacoin'` or `'MEC'`
-
 * Monero/XMR, `'monero'` or `'XMR'`
-
 * Namecoin/NMC, `'namecoin'` or `'NMC'`
 * Nano/NANO, `'nano'` or `'NANO'`
 * NEO/NEO, `'NEO'` or `'NEO'`
 * NeoGas/GAS, `'neogas'` or `'GAS'`
-
 * Peercoin/PPCoin/PPC, `'peercoin'` or `'PPC'`
 * Primecoin/XPM, `'primecoin'` or `'XPM'`
 * Protoshares/PTS, `'protoshares'` or `'PTS'`
-
 * Qtum/QTUM, `'qtum'` or `'QTUM'`
-
 * Raiblocks/XRB, `'raiblocks'` or `'XRB'`
 * Ripple/XRP, `'ripple'` or `'XRP'`
-
 * Snowgem/SNG, `'snowgem'` or `'SNG'`
-
 * Vertcoin/VTC, `'vertcoin'` or `'VTC'`
-
 * Votecoin/VTC, `'votecoin'` or `'VOT'`
-
 * Zcash/ZEC, `'zcash'` or `'ZEC'`
-
 * Zclassic/ZCL, `'zclassic'` or `'ZCL'`
-
 * ZenCash/ZEN, `'zencash'` or `'ZEN'`
-
 * PostCoin/POST, `'postcoin'` or `'POST'`
-
 * Nobtcoin/NOBT, `'nobtcoin'` or `'NOBT'`
-
 * VeriCoin/VRC, `'vericoin'` or `'VRC'`
-
 * VeriumReserve/VRM, `'verium'` or `'VRM'`
-
 * Smilo/XSM, `'smilo'` or `'XSM'`
-
 * ZENZO/ZNZ, `'zenzo'` or `'ZNZ'`
-
 * Universe/UNI, `'universe'` or `'UNI'`
-
 * Spectrecoin/XSPEC, `'spectre'` or `'XSPEC'`
-
 * 42-coin/42, `'42coin'` or `'42'`
-
 * SmartHoldem/STH, `'smartholdem'` or `'STH'`
 
 ### Usage example
