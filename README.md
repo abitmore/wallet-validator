@@ -102,6 +102,7 @@ npm install wallet-address-validator
 
 * Smilo/XSM, `'smilo'` or `'XSM'`
 
+* ZENZO/ZNZ, `'zenzo'` or `'ZNZ'`
 
 ### Usage example
 
