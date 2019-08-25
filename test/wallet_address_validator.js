@@ -465,7 +465,7 @@ describe('WAValidator.validate()', function () {
             valid('SNiSmCHNbULHX6VGR9ZaTgvw45cgZdyf2A', 'sth');
         });
 
-        it('should return true for correct Steepcoin addresses', function () {
+        it('should return true for correct steep addresses', function () {
             valid('sUETEnMawsqE6GTXgX7XTBpe6Saa5SsSqb', 'STEEP');
             valid('sXfzHAATvuRPgKa7z3HFEUuDN5n26qJeeH', 'steep');
             valid('sNrsQ7CtGWH8XMUXTeDdrxBDRa1PmG376G', 'steep');
