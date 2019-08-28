@@ -1,4 +1,4 @@
-# wallet-address-validator
+# wallet-validator
 Simple wallet address validator for validating Bitcoin and other altcoins addresses in **Node.js and browser**.
 
 Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
@@ -29,7 +29,7 @@ npm install --save wallet-validator
 > Returns true if the address (string) is a valid wallet address for the crypto currency specified, see below for supported currencies.
 
 ### Supported crypto currencies
-
+* SmartHoldem/STH, `'smartholdem'` or `'STH'`
 * Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 * Bankex/BKX, `'bankex'` or `'BKX'`
 * BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
@@ -79,7 +79,6 @@ npm install --save wallet-validator
 * Universe/UNI, `'universe'` or `'UNI'`
 * Spectrecoin/XSPEC, `'spectre'` or `'XSPEC'`
 * 42-coin/42, `'42coin'` or `'42'`
-* SmartHoldem/STH, `'smartholdem'` or `'STH'`
 * SteepCoin/STEEP, `'steep'` or `'STEEP'`
 * EverGreenCoin/EGC, `'evergreen'` or `'EGC'`
 
