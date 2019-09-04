@@ -1,4 +1,7 @@
 # wallet-validator
+
+Fast and convenient utility for checking the validity of coin addresses without access to the blockchain.
+
 Simple wallet address validator for validating Bitcoin and other altcoins addresses in **Node.js and browser**.
 
 Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
