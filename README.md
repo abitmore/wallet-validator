@@ -84,6 +84,7 @@ npm install --save wallet-validator
 * 42-coin/42, `'42coin'` or `'42'`
 * SteepCoin/STEEP, `'steep'` or `'STEEP'`
 * EverGreenCoin/EGC, `'evergreen'` or `'EGC'`
+* BitConnectX/BCCX, `'bitconnectx'` or `'BCCX'`
 
 ### Usage example
 
