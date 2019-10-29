@@ -479,6 +479,13 @@ describe('WAValidator.validate()', function () {
             valid('EShn8S3brVgZjuBASExCE1hmaDp5GfAvZj', 'egc');
         });
 
+        it('should return true for correct bitconnectx addresses', function () {
+            valid('XJC4A6gHAhRn359ACgNhGK39t3ed8jLKqe', 'BCCX');
+            valid('XVAEfAPbcM7PiPMT3fwsKFfhNHERQMqvQh', 'bitconnectx');
+            valid('XZD6sNy6z7wjLhJwKRgxwoxu5yXCqHAUgg', 'bccx');
+            valid('XLTXn8NnHTXJJbQ56SNfNs6q6GkFZ5nWe5', 'bccx');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -743,6 +750,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect evergreen addresses', function () {
             commonTests('evergreen');
+        });
+
+        it('should return false for incorrect bitconnectx addresses', function () {
+            commonTests('bitconnectx');
         });
 
     });

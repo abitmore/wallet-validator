@@ -2395,7 +2395,7 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-        //console.log('checksum', cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
+        //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
 
@@ -5805,6 +5805,11 @@ var CURRENCIES = [{
     name: 'evergreen',
     symbol: 'egc',
     addressTypes: {prod: ['55', '21'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+},{
+    name: 'bitconnectx',
+    symbol: 'bccx',
+    addressTypes: {prod: ['55', '4b'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }];
 
