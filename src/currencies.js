@@ -268,6 +268,11 @@ var CURRENCIES = [{
     symbol: 'egc',
     addressTypes: {prod: ['55', '21'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'bitconnectx',
+    symbol: 'bccx',
+    addressTypes: {prod: ['55', '4b'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
