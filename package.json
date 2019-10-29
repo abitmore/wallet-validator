@@ -33,7 +33,7 @@
         "browser",
         "nodejs"
     ],
-    "version": "0.2.8",
+    "version": "0.2.9",
     "author": "Tomek Kolasa <tomek@kolasa.me>",
     "maintainers": "TechnoL0g <dev@smartholdem.io> (https://smartholdem.io)",
     "homepage": "https://github.com/technologiespro/wallet-validator",
