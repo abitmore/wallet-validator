@@ -241,7 +241,7 @@ var CURRENCIES = [{
 },{
     name: 'universe',
     symbol: 'uni',
-    addressTypes: {prod: ['55', '44'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['c4', '44'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'spectre',
