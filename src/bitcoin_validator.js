@@ -73,3 +73,4 @@ module.exports = {
         return isValidP2PKHandP2SHAddress(address, currency, networkType) || segwit.isValidAddress(address, currency.segwitHrp);
     }
 };
+
