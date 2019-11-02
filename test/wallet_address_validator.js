@@ -486,6 +486,13 @@ describe('WAValidator.validate()', function () {
             valid('XLTXn8NnHTXJJbQ56SNfNs6q6GkFZ5nWe5', 'bccx');
         });
 
+        it('should return true for correct guapcoin addresses', function () {
+            valid('GZYf3w6LMNDuuoSeWQtvJcZhKARhmspS6W', 'GUAP');
+            valid('GX7qZcqdAXK38trLpiGZoPj61d4GSaYcEF', 'guapcoin');
+            valid('GYwayqaQeSP12WW24ZPUS6HK3AXbgxsFk9', 'guap');
+            valid('GJ4oAvHYU2NfpyKxmu13mmhuZa7TDSMczv', 'guap');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -754,6 +761,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect bitconnectx addresses', function () {
             commonTests('bitconnectx');
+        });
+
+        it('should return false for incorrect guapcoin addresses', function () {
+            commonTests('guapcoin');
         });
 
     });
