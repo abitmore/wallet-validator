@@ -261,7 +261,7 @@ var CURRENCIES = [{
 },{
     name: 'steep',
     symbol: 'steep',
-    addressTypes: {prod: ['3f', '7d'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['7d', 'fd'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'evergreen',
