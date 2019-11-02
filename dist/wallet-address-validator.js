@@ -5811,6 +5811,11 @@ var CURRENCIES = [{
     symbol: 'bccx',
     addressTypes: {prod: ['55', '4b'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'guapcoin',
+    symbol: 'guap',
+    addressTypes: {prod: ['26', '2e'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }];
 
 
