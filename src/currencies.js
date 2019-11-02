@@ -246,7 +246,7 @@ var CURRENCIES = [{
 },{
     name: 'spectre',
     symbol: 'xspec',
-    addressTypes: {prod: ['55', '3f'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['3f', 'c4'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: '42coin',
