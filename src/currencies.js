@@ -266,7 +266,7 @@ var CURRENCIES = [{
 },{
     name: 'evergreen',
     symbol: 'egc',
-    addressTypes: {prod: ['1a', '21'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['21', '1a'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'bitconnectx',
