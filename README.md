@@ -85,6 +85,7 @@ npm install --save wallet-validator
 * SteepCoin/STEEP, `'steep'` or `'STEEP'`
 * EverGreenCoin/EGC, `'evergreen'` or `'EGC'`
 * BitConnectX/BCCX, `'bitconnectx'` or `'BCCX'`
+* GuapCoin/GUAP, `'guapcoin'` or `'GUAP'`
 
 ### Usage example
 
