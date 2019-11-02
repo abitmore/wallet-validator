@@ -2395,7 +2395,7 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-        //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
+            //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24))) // first value
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
 
@@ -2426,6 +2426,7 @@ module.exports = {
         return isValidP2PKHandP2SHAddress(address, currency, networkType) || segwit.isValidAddress(address, currency.segwitHrp);
     }
 };
+
 
 },{"./crypto/base58":9,"./crypto/segwit_addr":15,"./crypto/utils":17}],9:[function(require,module,exports){
 // Base58 encoding/decoding
@@ -5779,12 +5780,12 @@ var CURRENCIES = [{
 },{
     name: 'universe',
     symbol: 'uni',
-    addressTypes: {prod: ['55', '44'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['44', 'c4'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'spectre',
     symbol: 'xspec',
-    addressTypes: {prod: ['55', '3f'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['3f', 'c4'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: '42coin',
@@ -5804,12 +5805,12 @@ var CURRENCIES = [{
 },{
     name: 'evergreen',
     symbol: 'egc',
-    addressTypes: {prod: ['55', '21'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['21', '1a'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'bitconnectx',
     symbol: 'bccx',
-    addressTypes: {prod: ['55', '4b'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['4b', 'cb'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 },{
     name: 'guapcoin',

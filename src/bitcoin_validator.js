@@ -42,7 +42,7 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-        //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)))
+            //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24))) // first value
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
 
