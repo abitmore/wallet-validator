@@ -278,7 +278,13 @@ var CURRENCIES = [{
     symbol: 'guap',
     addressTypes: {prod: ['26', '2e'], testnet: ['6f', 'c4']},
     validator: BTCValidator
-}];
+},{
+    name: 'ravencoin',
+    symbol: 'rvn',
+    addressTypes: {prod: ['3c', '80'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}
+];
 
 
 module.exports = {
