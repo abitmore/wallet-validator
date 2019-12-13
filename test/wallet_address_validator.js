@@ -493,6 +493,13 @@ describe('WAValidator.validate()', function () {
             valid('GJ4oAvHYU2NfpyKxmu13mmhuZa7TDSMczv', 'guap');
         });
 
+        it('should return true for correct ravencoin addresses', function () {
+            valid('RTg8togXdjfUHf3So38k3vk4yL5DxRkzB9', 'RVN');
+            valid('RTo5Kou9rMYuQ2EJPHz1534T9GGKP4uj8r', 'ravencoin');
+            valid('RDRhxdteMgFoohtHw3k6RwUQHZsf9Cje8P', 'rvn');
+            valid('R9ukycPdaNymRAZhA6SYBZ4v2XjqWfAGeg', 'rvn');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -765,6 +772,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect guapcoin addresses', function () {
             commonTests('guapcoin');
+        });
+
+        it('should return false for incorrect ravencoin addresses', function () {
+            commonTests('ravencoin');
         });
 
     });
