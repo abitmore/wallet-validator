@@ -86,6 +86,7 @@ npm install --save wallet-validator
 * EverGreenCoin/EGC, `'evergreen'` or `'EGC'`
 * BitConnectX/BCCX, `'bitconnectx'` or `'BCCX'`
 * GuapCoin/GUAP, `'guapcoin'` or `'GUAP'`
+* Ravencoin/RVN, `'ravencoin'` or `'RVN'`
 
 ### Usage example
 
