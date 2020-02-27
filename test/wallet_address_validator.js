@@ -500,6 +500,37 @@ describe('WAValidator.validate()', function () {
             valid('R9ukycPdaNymRAZhA6SYBZ4v2XjqWfAGeg', 'rvn');
         });
 
+        it('should return true for correct stellar addresses', function () {
+            valid('GBBM6BKZPEHWYO3E3YKREDPQXMS4VK35YLNU7NFBRI26RAN7GI5POFBB', 'stellar');
+            valid('GB7KKHHVYLDIZEKYJPAJUOTBE5E3NJAXPSDZK7O6O44WR3EBRO5HRPVT', 'stellar');
+            valid('GD6WVYRVID442Y4JVWFWKWCZKB45UGHJAABBJRS22TUSTWGJYXIUR7N2', 'stellar');
+            valid('GBCG42WTVWPO4Q6OZCYI3D6ZSTFSJIXIS6INCIUF23L6VN3ADE4337AP', 'stellar');
+            valid('GDFX463YPLCO2EY7NGFMI7SXWWDQAMASGYZXCG2LATOF3PP5NQIUKBPT', 'stellar');
+            valid('GBXEODUMM3SJ3QSX2VYUWFU3NRP7BQRC2ERWS7E2LZXDJXL2N66ZQ5PT', 'stellar');
+            valid('GAJHORKJKDDEPYCD6URDFODV7CVLJ5AAOJKR6PG2VQOLWFQOF3X7XLOG', 'stellar');
+            valid('GACXQEAXYBEZLBMQ2XETOBRO4P66FZAJENDHOQRYPUIXZIIXLKMZEXBJ', 'stellar');
+            valid('GDD3XRXU3G4DXHVRUDH7LJM4CD4PDZTVP4QHOO4Q6DELKXUATR657OZV', 'stellar');
+            valid('GDTYVCTAUQVPKEDZIBWEJGKBQHB4UGGXI2SXXUEW7LXMD4B7MK37CWLJ', 'stellar');
+        });
+
+        it('should return true for correct cardano addresses', function () {
+            valid('Ae2tdPwUPEZJ4CA1ECfG6bs6s42TYAmGD1WivKapvq4goyEvTtJkWoKvfjQ', 'cardano');
+            valid('DdzFFzCqrht2DShg1SMD6ssDLLzSQM7g8MUSdcQM9Cf8M1DRjGC9Da4CfMabY4RxoVhdaGqmY2EHTfxLQqiqR2jFF5jQyqTKWGcx3KX3', 'cardano');
+            valid('DdzFFzCqrhsu8ZiYwD8EY7NdPVeCs87iMomsZxreWAJzeXwZEZtWGVVLDKHu5khHWKyEbtwWq58vkXzxhhcsRJiksXErhQivqHpQLrLz', 'cardano');
+            valid('Ae2tdPwUPEYx4T3GnQH4XE632Z5ZCMJ5SLesNTEmuJJUQJRW9z1ty4F8qfc', 'cardano');
+        });
+
+        it('should return true for correct vechain addresses', function () {
+            valid('0x6bf76c6f76e0971130e72055b6445ee10eabf48b', 'vechain');
+            valid('0x1671a3e4A2519A653E66E827ef6eaE690ee86729', 'vechain');
+        });
+
+        it('should return true for correct trx addresses', function () {
+            valid('TNDzfERDpxLDS2w1q6yaFC7pzqaSQ3Bg3r', 'trx');
+            valid('41e825d52582eec346c839b4875376117904a76cbc', 'trx');
+            valid('27bLJCYjbH6MT8DBF9xcrK6yZnm43vx7MNQ', 'trx', 'testnet');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -776,6 +807,35 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect ravencoin addresses', function () {
             commonTests('ravencoin');
+        });
+
+        it('should return false for incorrect stellar addresses', function () {
+            commonTests('stellar');
+            invalid('SBGWKM3CD4IL47QN6X54N6Y33T3JDNVI6AIJ6CD5IM47HG3IG4O36XCU', 'stellar');
+            invalid('GBPXX0A5N4JYPESHAADMQKBPWZWQDQ64ZV6ZL2S3LAGW4SY7NTCMWIVL', 'stellar');
+            invalid('GCFZB6L25D26RQFDWSSBDEYQ32JHLRMTT44ZYE3DZQUTYOL7WY43PLBG++', 'stellar');
+            invalid('GADE5QJ2TY7S5ZB65Q43DFGWYWCPHIYDJ2326KZGAGBN7AE5UY6JVDRRA', 'stellar');
+            invalid('GB6OWYST45X57HCJY5XWOHDEBULB6XUROWPIKW77L5DSNANBEQGUPADT2', 'stellar');
+            invalid('GB6OWYST45X57HCJY5XWOHDEBULB6XUROWPIKW77L5DSNANBEQGUPADT2T', 'stellar');
+            invalid('GDXIIZTKTLVYCBHURXL2UPMTYXOVNI7BRAEFQCP6EZCY4JLKY4VKFNLT', 'stellar');
+            invalid('SAB5556L5AN5KSR5WF7UOEFDCIODEWEO7H2UR4S5R62DFTQOGLKOVZDY', 'stellar');
+            invalid('gWRYUerEKuz53tstxEuR3NCkiQDcV4wzFHmvLnZmj7PUqxW2wt', 'stellar');
+            invalid('g4VPBPrHZkfE8CsjuG2S4yBQNd455UWmk', 'stellar');
+        });
+
+        it('should return false for incorrect cardano addresses', function () {
+            commonTests('cardano');
+            invalid('Ae2tdPwUPEZJ4CA1ECfG6bs6s42TYAmGD1WivKapvq4goyEvTtJkW0KvfjQ', 'cardano');
+            invalid('Be2tdPwUPEZJ4CA1ECfG6bs6sTtJkW0KvfjQ', 'cardano');
+            invalid('LdzFFzCqrht2DShg1SMD6ssDLLzSQM7g8MUSdcQM9Cf8M1DRjGC9Da4CfMabY4RxoVhdaGqmY2EHTfxLQqiqR2jFF5jQyqTKWGcx3KX3', 'cardano');
+            invalid('DdzFFzCqrht2DShg1SMD6ssDLLzSQM7g8MUSdcQM9Cf8M1DRjGC9Da4CfMabY4Rx0VhdaGqmY2EHTfxLQqiqR2jFF5jQyqTKWGcx3KX3', 'cardano');
+            invalid('DdzFFzCqrht2DShg1SMD6ssDLLzSQM7g8MUSdcQM9Cf8M1DRjGC9Da4CfMa', 'cardano');
+        });
+
+        it('should return false for incorrect vechain addresses', function () {
+            commonTests('vechain');
+            invalid('2a6bf76c6f76e0971130e72055b6445ee10eabf48b', 'vechain');
+            invalid('0x6bf76c6f76e0971130e72055b6445ee10eabf48', 'vechain');
         });
 
     });

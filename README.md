@@ -87,6 +87,11 @@ npm install --save wallet-validator
 * BitConnectX/BCCX, `'bitconnectx'` or `'BCCX'`
 * GuapCoin/GUAP, `'guapcoin'` or `'GUAP'`
 * Ravencoin/RVN, `'ravencoin'` or `'RVN'`
+* Stellar/XLM, `'stellar'` or `'XLM'`
+* Cardano/ADA, `'cardano' or 'ADA'`
+* VeChain/VET, `'vechain'` or `'VET'`
+* TRON/TRX, `'tron'` or `'TRX'`
+
 
 ### Usage example
 
