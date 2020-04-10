@@ -307,7 +307,7 @@ var CURRENCIES = [{
     {
         name: 'pruxcoin',
         symbol: 'prux',
-        addressTypes: {prod: ['37', '75'], testnet: ['6f', 'c4']},
+        addressTypes: {prod: ['37', 'b7'], testnet: ['6f', 'c4']},
         validator: BTCValidator
     }
 ];
