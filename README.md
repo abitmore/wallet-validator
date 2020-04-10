@@ -91,7 +91,7 @@ npm install --save wallet-validator
 * Cardano/ADA, `'cardano' or 'ADA'`
 * VeChain/VET, `'vechain'` or `'VET'`
 * TRON/TRX, `'tron'` or `'TRX'`
-
+* PRUX-Coin/PRUX, `'pruxcoin'` or `'PRUX'`
 
 ### Usage example
 
