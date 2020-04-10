@@ -531,6 +531,14 @@ describe('WAValidator.validate()', function () {
             valid('27bLJCYjbH6MT8DBF9xcrK6yZnm43vx7MNQ', 'trx', 'testnet');
         });
 
+        it('should return true for correct pruxcoin addresses', function () {
+            valid('PQfFKRVVTF2bL8NvZhJvfdJ5pj3HV5jzcC', 'pruxcoin');
+            valid('PNUjGoD94enJUz1Z5X1T5MJQ2ifQaGcX3y', 'pruxcoin');
+            valid('PGu2P1vkFhqqEJmjGtcHbGTMzfm3xJHDTJ', 'pruxcoin');
+            valid('PWSdDSRTCR7s5NZT6WV4C2pJJSNHGhrRJF', 'prux');
+            valid('PSQJF24CEwBUeSja5SyT54cQvJZ2rRnCwg', 'PRUX');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -836,6 +844,10 @@ describe('WAValidator.validate()', function () {
             commonTests('vechain');
             invalid('2a6bf76c6f76e0971130e72055b6445ee10eabf48b', 'vechain');
             invalid('0x6bf76c6f76e0971130e72055b6445ee10eabf48', 'vechain');
+        });
+
+        it('should return false for incorrect pruxcoin addresses', function () {
+            commonTests('pruxcoin');
         });
 
     });
