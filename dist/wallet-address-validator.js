@@ -6886,7 +6886,13 @@ var CURRENCIES = [{
     symbol: 'trx',
     addressTypes: {prod: [0x41], testnet: [0xa0]},
     validator: TRXValidator
-}
+},
+    {
+        name: 'pruxcoin',
+        symbol: 'prux',
+        addressTypes: {prod: ['37', '75'], testnet: ['6f', 'c4']},
+        validator: BTCValidator
+    }
 ];
 
 
