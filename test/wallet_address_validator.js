@@ -539,6 +539,14 @@ describe('WAValidator.validate()', function () {
             valid('PSQJF24CEwBUeSja5SyT54cQvJZ2rRnCwg', 'PRUX');
         });
 
+        it('should return true for correct deeponion addresses', function () {
+            valid('DVRDAgeVzNgKyXLRSfenRW7FPw33GFsqBM', 'deeponion');
+            valid('DVNtSjHooV7NHFaSx2Zj8LJAySDddRAJSo', 'deeponion');
+            valid('Dgvn4a9APEK8SYyxbDdbMSnneiBxc29PJN', 'ONION');
+            valid('DcLfVVzrmbBk1feiBSrChLCjZiwBE8M6AL', 'onion');
+            valid('DpWgx3SvuWKish9Fm5RPpgp6u6B3QxV6fT', 'onion');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -848,6 +856,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect pruxcoin addresses', function () {
             commonTests('pruxcoin');
+        });
+
+        it('should return false for incorrect deeponion addresses', function () {
+            commonTests('onion');
         });
 
     });
