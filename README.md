@@ -92,6 +92,7 @@ npm install --save wallet-validator
 * VeChain/VET, `'vechain'` or `'VET'`
 * TRON/TRX, `'tron'` or `'TRX'`
 * PRUX-Coin/PRUX, `'pruxcoin'` or `'PRUX'`
+* DeepOnion/ONIO, `'deeponion'` or `'ONION'`
 
 ### Usage example
 
