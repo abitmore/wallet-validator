@@ -303,13 +303,17 @@ var CURRENCIES = [{
     symbol: 'trx',
     addressTypes: {prod: [0x41], testnet: [0xa0]},
     validator: TRXValidator
-},
-    {
-        name: 'pruxcoin',
-        symbol: 'prux',
-        addressTypes: {prod: ['37', 'b7'], testnet: ['6f', 'c4']},
-        validator: BTCValidator
-    }
+}, {
+    name: 'pruxcoin',
+    symbol: 'prux',
+    addressTypes: {prod: ['37', 'b7'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'deeponion',
+    symbol: 'onion',
+    addressTypes: {prod: ['1f', '9f'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}
 ];
 
 
