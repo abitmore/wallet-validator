@@ -93,6 +93,7 @@ npm install --save wallet-validator
 * TRON/TRX, `'tron'` or `'TRX'`
 * PRUX-Coin/PRUX, `'pruxcoin'` or `'PRUX'`
 * DeepOnion/ONION, `'deeponion'` or `'ONION'`
+* Bitcoinrand/BZAR, `'bitcoinrand'` or `'BZAR'`
 
 ### Usage example
 
