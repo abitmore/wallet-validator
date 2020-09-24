@@ -1,5 +1,6 @@
 {
     "name": "wallet-validator",
+    "version": "0.3.4",
     "description": "Fast Wallet address validator for Bitcoin and other Altcoins.",
     "keywords": [
         "smartholdem",
@@ -36,9 +37,7 @@
         "browser",
         "nodejs"
     ],
-    "version": "0.3.3",
-    "author": "Tomek Kolasa <tomek@kolasa.me>",
-    "maintainers": "TechnoL0g <dev@smartholdem.io> (https://smartholdem.io)",
+    "author": "TechnoL0g <technolog@smartholdem.io>",
     "homepage": "https://github.com/technologiespro/wallet-validator",
     "license": "MIT",
     "repository": {
