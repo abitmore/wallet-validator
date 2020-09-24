@@ -2942,7 +2942,6 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-            //console.log(body)
             //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24))) // first value
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
@@ -6605,6 +6604,7 @@ var CURRENCIES = [{
     name: 'litecoin',
     symbol: 'ltc',
     addressTypes: {prod: ['30', '05', '32'], testnet: ['6f', 'c4', '3a']},
+    //segwitHrp: 'ltc',
     validator: BTCValidator
 }, {
     name: 'peercoin',
@@ -6895,6 +6895,11 @@ var CURRENCIES = [{
     name: 'deeponion',
     symbol: 'onion',
     addressTypes: {prod: ['1f', '9f'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'bitcoinrand',
+    symbol: 'bzar',
+    addressTypes: {prod: ['3c', '3d'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }
 ];
