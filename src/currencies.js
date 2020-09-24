@@ -22,6 +22,7 @@ var CURRENCIES = [{
     name: 'litecoin',
     symbol: 'ltc',
     addressTypes: {prod: ['30', '05', '32'], testnet: ['6f', 'c4', '3a']},
+    //segwitHrp: 'ltc',
     validator: BTCValidator
 }, {
     name: 'peercoin',
@@ -312,6 +313,11 @@ var CURRENCIES = [{
     name: 'deeponion',
     symbol: 'onion',
     addressTypes: {prod: ['1f', '9f'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'bitcoinrand',
+    symbol: 'bzar',
+    addressTypes: {prod: ['3c', '3d'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }
 ];
