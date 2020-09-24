@@ -869,5 +869,9 @@ describe('WAValidator.validate()', function () {
             commonTests('onion');
         });
 
+        it('should return false for incorrect bitcoinrand addresses', function () {
+            commonTests('bitcoinrand');
+        });
+
     });
 });
