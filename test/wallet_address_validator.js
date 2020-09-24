@@ -547,6 +547,13 @@ describe('WAValidator.validate()', function () {
             valid('DpWgx3SvuWKish9Fm5RPpgp6u6B3QxV6fT', 'onion');
         });
 
+        it('should return true for correct Bitcoinrand addresses', function () {
+            valid('RaemJcXKLPHi6CretDDwk7DrttnVGjSxAR', 'bitcoinrand');
+            valid('Rjb7LJkxe7nP8LHGd2UDkk8hZSxKhNeHeS', 'bitcoinrand');
+            valid('RwowUVU93GKQ52KhXEAQqUR4ctJdP4iPER', 'bzar'); //3c
+            valid('RB38MTnqBJKquPVMEWJoaiK2URPRkLgStp', 'BZAR'); //3d
+        });
+
     });
 
     describe('invalid results', function () {
