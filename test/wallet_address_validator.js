@@ -75,6 +75,7 @@ describe('WAValidator.validate()', function () {
         });
 
         it('should return true for correct litecoin addresses', function () {
+            valid('ltc1q5det08ke2gpet06wczcdfs2v3hgfqllxw28uln8vxxx82qlue6uswceljm', 'LTC');
             valid('LVg2kJoFNg45Nbpy53h7Fe1wKyeXVRhMH9', 'litecoin');
             valid('LVg2kJoFNg45Nbpy53h7Fe1wKyeXVRhMH9', 'LTC');
             valid('LTpYZG19YmfvY2bBDYtCKpunVRw7nVgRHW', 'litecoin');
