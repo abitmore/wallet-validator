@@ -555,6 +555,13 @@ describe('WAValidator.validate()', function () {
             valid('RB38MTnqBJKquPVMEWJoaiK2URPRkLgStp', 'BZAR'); //3d
         });
 
+        it('should return true for correct Emercoin addresses', function () {
+            valid('EU9QzrQBgz9T96SviumxtRD3oX3XTr9dD2', 'emercoin');
+            valid('EaDuchgXysbGH5zkbwzGvAH5nYLxsNizTq', 'emercoin');
+            valid('EeLeckKqTRvbbyThGhvMYeVWhrCwYb6ev6', 'emc');
+            valid('EMMP65RxczS2EPSNQyZ5h83qpeX3Quktf3', 'EMC');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -872,6 +879,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect bitcoinrand addresses', function () {
             commonTests('bitcoinrand');
+        });
+
+        it('should return false for incorrect Emercoin addresses', function () {
+            commonTests('emercoin');
         });
 
     });
