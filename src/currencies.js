@@ -319,6 +319,11 @@ var CURRENCIES = [{
     symbol: 'bzar',
     addressTypes: {prod: ['3c', '3d'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+}, {
+    name: 'emercoin',
+    symbol: 'emc',
+    addressTypes: {prod: ['21', '80'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }
 ];
 
