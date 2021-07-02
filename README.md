@@ -92,6 +92,7 @@ npm install --save wallet-validator
 * PRUX-Coin/PRUX, `'pruxcoin'` or `'PRUX'`
 * DeepOnion/ONION, `'deeponion'` or `'ONION'`
 * Bitcoinrand/BZAR, `'bitcoinrand'` or `'BZAR'`
+* Emercoin/EMC, `'emercoin'` or `'EMC'`
 
 ### Usage example
 
