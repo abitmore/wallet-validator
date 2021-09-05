@@ -1,6 +1,6 @@
 {
     "name": "wallet-validator",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "Fast Wallet address validator for Bitcoin and other Altcoins.",
     "keywords": [
         "smartholdem",
