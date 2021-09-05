@@ -562,6 +562,13 @@ describe('WAValidator.validate()', function () {
             valid('EMMP65RxczS2EPSNQyZ5h83qpeX3Quktf3', 'EMC');
         });
 
+        it('should return true for correct HiveCoin addresses', function () {
+            valid('HMgF4B7sTrvEa8Bx1LqwARWVQhwnFVWHhE', 'hivecoin');
+            valid('HGwYYA3NPuTYFyZ2hj9mQFb4SYE8dSfji3', 'hivecoin');
+            valid('HCNjL8qAyHNXZqBBCdMKcZurJCHPWk9wMi', 'hvn');
+            valid('HBDKG9NCo4Dt3WmLrnSiZJGHcQK1GFWfuf', 'HVN');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -883,6 +890,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect Emercoin addresses', function () {
             commonTests('emercoin');
+        });
+
+        it('should return false for incorrect hivecoin addresses', function () {
+            commonTests('hivecoin');
         });
 
     });
