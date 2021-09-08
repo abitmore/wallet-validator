@@ -569,6 +569,11 @@ describe('WAValidator.validate()', function () {
             valid('HBDKG9NCo4Dt3WmLrnSiZJGHcQK1GFWfuf', 'HVN');
         });
 
+        it('should return true for correct Binance Coin addresses', () => {
+            valid('bnb1l6a3wcvwypzxa58nkr5ug4edqv0hg7ye24smag', 'bnb')
+            valid('bnb1jdy9svxl8jk3s9grsvencvrhx7pt3nvel68uk5', 'bnb')
+        })
+
     });
 
     describe('invalid results', function () {
