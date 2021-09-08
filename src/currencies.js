@@ -6,6 +6,7 @@ var NANOValidator = require('./nano_validator');
 var XLMValidator = require('./stellar_validator');
 var ADAValidator = require('./cardano_validator');
 var TRXValidator = require('./tron_validator');
+const BNBValidator = require('./bnb_validator')
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -329,6 +330,10 @@ var CURRENCIES = [{
     symbol: 'hvn',
     addressTypes: {prod: ['28', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+}, {
+    name: 'binancecoin',
+    symbol: 'bnb',
+    validator: BNBValidator
 }
 ];
 

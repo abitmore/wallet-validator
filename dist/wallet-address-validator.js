@@ -6906,6 +6906,11 @@ var CURRENCIES = [{
     symbol: 'emc',
     addressTypes: {prod: ['21', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+}, {
+    name: 'hivecoin',
+    symbol: 'hvn',
+    addressTypes: {prod: ['28', '80'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }
 ];
 
