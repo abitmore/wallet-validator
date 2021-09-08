@@ -6,7 +6,7 @@ var NANOValidator = require('./nano_validator');
 var XLMValidator = require('./stellar_validator');
 var ADAValidator = require('./cardano_validator');
 var TRXValidator = require('./tron_validator');
-const BNBValidator = require('./bnb_validator')
+var BNBValidator = require('./bnb_validator')
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{

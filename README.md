@@ -94,6 +94,7 @@ npm install --save wallet-validator
 * Bitcoinrand/BZAR, `'bitcoinrand'` or `'BZAR'`
 * Emercoin/EMC, `'emercoin'` or `'EMC'`
 * HiveCoin/HVN, `'hivecoin'` or `'HVN'`
+* BinanceCoin/BNB, `'binancecoin'` or `'BNB'`
 
 ### Usage example
 

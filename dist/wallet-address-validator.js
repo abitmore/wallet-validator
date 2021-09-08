@@ -2975,7 +2975,17 @@ module.exports = {
 };
 
 
-},{"./crypto/base58":35,"./crypto/segwit_addr":42,"./crypto/utils":44}],34:[function(require,module,exports){
+},{"./crypto/base58":36,"./crypto/segwit_addr":43,"./crypto/utils":45}],34:[function(require,module,exports){
+var regexp = new RegExp('^(bnb)([a-z0-9]{39})$') // bnb + 39 a-z0-9
+
+module.exports = {
+    isValidAddress: function (address, currency, networkType) {
+        var match = regexp.exec(address)
+        return match !== null
+    }
+}
+
+},{}],35:[function(require,module,exports){
 var CRC = require('crc');
 var cbor = require('./crypto/cbor');
 var base58 = require('./crypto/base58');
@@ -3012,7 +3022,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/base58":35,"./crypto/cbor":40,"crc":28}],35:[function(require,module,exports){
+},{"./crypto/base58":36,"./crypto/cbor":41,"crc":28}],36:[function(require,module,exports){
 // Base58 encoding/decoding
 // Originally written by Mike Hearn for BitcoinJ
 // Copyright (c) 2011 Google Inc
@@ -3060,7 +3070,7 @@ module.exports = {
     }
 };
 
-},{}],36:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 // Copyright (c) 2017 Pieter Wuille
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -3178,7 +3188,7 @@ function decode (bechString) {
   return {hrp: hrp, data: data.slice(0, data.length - 6)};
 }
 
-},{}],37:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 /*
 	JavaScript BigInteger library version 0.9.1
 	http://silentmatt.com/biginteger/
@@ -4629,7 +4639,7 @@ function decode (bechString) {
     
     exports.JSBigInt = BigInteger; // exports.BigInteger changed to exports.JSBigInt
     })(typeof exports !== 'undefined' ? exports : this);
-},{}],38:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -4820,7 +4830,7 @@ Blake256.prototype.digest = function (encoding) {
 
 module.exports = Blake256;
 }).call(this,require("buffer").Buffer)
-},{"buffer":3}],39:[function(require,module,exports){
+},{"buffer":3}],40:[function(require,module,exports){
 'use strict';
 
 /**
@@ -5097,7 +5107,7 @@ function toHex (n) {
 }
 
 module.exports = Blake2b;
-},{}],40:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 /*
  * Credits to https://github.com/paroga/cbor-js
  */
@@ -5485,7 +5495,7 @@ else if (!global.CBOR)
 
 })(this);
 
-},{}],41:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 var JSBigInt = require('./biginteger')['JSBigInt'];
 
 /**
@@ -5712,7 +5722,7 @@ var cnBase58 = (function () {
     return b58;
 })();
 module.exports = cnBase58;
-},{"./biginteger":37}],42:[function(require,module,exports){
+},{"./biginteger":38}],43:[function(require,module,exports){
 // Copyright (c) 2017 Pieter Wuille
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -5808,7 +5818,7 @@ module.exports = {
     isValidAddress: isValidAddress,
 };
 
-},{"./bech32":36}],43:[function(require,module,exports){
+},{"./bech32":37}],44:[function(require,module,exports){
 (function (process,global){
 /**
  * [js-sha3]{@link https://github.com/emn178/js-sha3}
@@ -6452,7 +6462,7 @@ var f = function (s) {
 module.exports = methods;
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":31}],44:[function(require,module,exports){
+},{"_process":31}],45:[function(require,module,exports){
 var jsSHA = require('jssha/src/sha256');
 var Blake256 = require('./blake256');
 var keccak256 = require('./sha3')['keccak256'];
@@ -6579,7 +6589,7 @@ module.exports = {
     hexStr2byteArray: hexStr2byteArray
 };
 
-},{"./base58":35,"./blake256":38,"./blake2b":39,"./sha3":43,"jssha/src/sha256":30}],45:[function(require,module,exports){
+},{"./base58":36,"./blake256":39,"./blake2b":40,"./sha3":44,"jssha/src/sha256":30}],46:[function(require,module,exports){
 var XRPValidator = require('./ripple_validator');
 var ETHValidator = require('./ethereum_validator');
 var BTCValidator = require('./bitcoin_validator');
@@ -6588,6 +6598,7 @@ var NANOValidator = require('./nano_validator');
 var XLMValidator = require('./stellar_validator');
 var ADAValidator = require('./cardano_validator');
 var TRXValidator = require('./tron_validator');
+var BNBValidator = require('./bnb_validator')
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -6911,6 +6922,10 @@ var CURRENCIES = [{
     symbol: 'hvn',
     addressTypes: {prod: ['28', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+}, {
+    name: 'binancecoin',
+    symbol: 'bnb',
+    validator: BNBValidator
 }
 ];
 
@@ -6928,7 +6943,7 @@ module.exports = {
     }
 };
 
-},{"./bitcoin_validator":33,"./cardano_validator":34,"./ethereum_validator":46,"./monero_validator":47,"./nano_validator":48,"./ripple_validator":49,"./stellar_validator":50,"./tron_validator":51}],46:[function(require,module,exports){
+},{"./bitcoin_validator":33,"./bnb_validator":34,"./cardano_validator":35,"./ethereum_validator":47,"./monero_validator":48,"./nano_validator":49,"./ripple_validator":50,"./stellar_validator":51,"./tron_validator":52}],47:[function(require,module,exports){
 var cryptoUtils = require('./crypto/utils');
 
 module.exports = {
@@ -6964,7 +6979,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/utils":44}],47:[function(require,module,exports){
+},{"./crypto/utils":45}],48:[function(require,module,exports){
 var cryptoUtils = require('./crypto/utils');
 var cnBase58 = require('./crypto/cnBase58');
 
@@ -7026,7 +7041,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/cnBase58":41,"./crypto/utils":44}],48:[function(require,module,exports){
+},{"./crypto/cnBase58":42,"./crypto/utils":45}],49:[function(require,module,exports){
 var cryptoUtils = require('./crypto/utils');
 var baseX = require('base-x');
 
@@ -7055,7 +7070,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/utils":44,"base-x":1}],49:[function(require,module,exports){
+},{"./crypto/utils":45,"base-x":1}],50:[function(require,module,exports){
 var cryptoUtils = require('./crypto/utils');
 var baseX = require('base-x');
 
@@ -7085,7 +7100,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/utils":44,"base-x":1}],50:[function(require,module,exports){
+},{"./crypto/utils":45,"base-x":1}],51:[function(require,module,exports){
 var baseX = require('base-x');
 var crc = require('crc');
 var cryptoUtils = require('./crypto/utils');
@@ -7133,7 +7148,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/utils":44,"base-x":1,"crc":28}],51:[function(require,module,exports){
+},{"./crypto/utils":45,"base-x":1,"crc":28}],52:[function(require,module,exports){
 var cryptoUtils = require('./crypto/utils');
 
 function decodeBase58Address(base58Sting) {
@@ -7206,7 +7221,7 @@ module.exports = {
     }
 };
 
-},{"./crypto/utils":44}],52:[function(require,module,exports){
+},{"./crypto/utils":45}],53:[function(require,module,exports){
 var currencies = require('./currencies');
 
 var DEFAULT_CURRENCY_NAME = 'bitcoin';
@@ -7223,5 +7238,5 @@ module.exports = {
     },
 };
 
-},{"./currencies":45}]},{},[52])(52)
+},{"./currencies":46}]},{},[53])(53)
 });
