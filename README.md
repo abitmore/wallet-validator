@@ -95,14 +95,15 @@ npm install --save wallet-validator
 * Emercoin/EMC, `'emercoin'` or `'EMC'`
 * HiveCoin/HVN, `'hivecoin'` or `'HVN'`
 * BinanceCoin/BNB, `'binancecoin'` or `'BNB'`
+* PIVX/PIVX, `'pivx'` or `'PIVX'`
 
 ### Usage example
 
 #### Node
 ```javascript
-var WAValidator = require('wallet-validator');
+var Validator = require('wallet-validator');
 
-var valid = WAValidator.validate('1KFzzGtDdnq5hrwxXGjwVnKzRbvf8WVxck', 'BTC');
+var valid = Validator.validate('1KFzzGtDdnq5hrwxXGjwVnKzRbvf8WVxck', 'BTC');
 if(valid)
 	console.log('This is a valid address');
 else
