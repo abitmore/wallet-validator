@@ -572,7 +572,14 @@ describe('WAValidator.validate()', function () {
         it('should return true for correct Binance Coin addresses', () => {
             valid('bnb1l6a3wcvwypzxa58nkr5ug4edqv0hg7ye24smag', 'bnb')
             valid('bnb1jdy9svxl8jk3s9grsvencvrhx7pt3nvel68uk5', 'bnb')
-        })
+        });
+
+        it('should return true for correct PIVX addresses', function () {
+            valid('D8xM8qYTxCngeWeMTzC5b5aRCMkAmLJUfk', 'pivx');
+            valid('DKVT2txKM8sdCXJbJoq95iauk9sgsxpeAF', 'pivx');
+            valid('DBa5cB3hMns5kwrdWVuCx9JjR5s5sVCY7U', 'PIVX');
+            valid('D5cxRBS92eE3UZyNBB25APazRtUi8yAy7D', 'PIVX');
+        });
 
     });
 
@@ -899,6 +906,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect hivecoin addresses', function () {
             commonTests('hivecoin');
+        });
+
+        it('should return false for incorrect pivx addresses', function () {
+            commonTests('pivx');
         });
 
     });
