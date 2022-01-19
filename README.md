@@ -96,6 +96,7 @@ npm install --save wallet-validator
 * HiveCoin/HVN, `'hivecoin'` or `'HVN'`
 * BinanceCoin/BNB, `'binancecoin'` or `'BNB'`
 * PIVX/PIVX, `'pivx'` or `'PIVX'`
+* Raptoreum/RTM, `'rtm'` or `'RTM'`
 
 ### Usage example
 
