@@ -6926,13 +6926,17 @@ var CURRENCIES = [{
     name: 'binancecoin',
     symbol: 'bnb',
     validator: BNBValidator
-},
-    {
-        name: 'pivx',
-        symbol: 'pivx',
-        addressTypes: {prod: ['1e', '10'], testnet: ['6f', 'c4']},
-        validator: BTCValidator
-    }
+}, {
+    name: 'pivx',
+    symbol: 'pivx',
+    addressTypes: {prod: ['1e', '10'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'raptoreum',
+    symbol: 'rtm',
+    addressTypes: {prod: ['3c', '80'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}
 ];
 
 
