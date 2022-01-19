@@ -581,6 +581,13 @@ describe('WAValidator.validate()', function () {
             valid('D5cxRBS92eE3UZyNBB25APazRtUi8yAy7D', 'PIVX');
         });
 
+        it('should return true for correct Raptoreum addresses', function () {
+            valid('RLJNQi7Ss9qbN3SsbEeUK9SnQuzqLfUJXb', 'rtm');
+            valid('REeMNzSdhz6dNUrGrtYbehTdPFc2zbrp9G', 'rtm');
+            valid('RTtyQU6DoSuNWetT4WUem5qXP5jNYGpwat', 'RTM');
+            valid('RN8n9x9DHzaq3tD7Dm3rzaU1JusSx9ZG7G', 'Raptoreum');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -910,6 +917,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect pivx addresses', function () {
             commonTests('pivx');
+        });
+
+        it('should return false for incorrect rtm addresses', function () {
+            commonTests('rtm');
         });
 
     });
