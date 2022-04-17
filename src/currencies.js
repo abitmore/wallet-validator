@@ -327,7 +327,7 @@ var CURRENCIES = [{
     validator: BTCValidator
 }, {
     name: 'hivecoin',
-    symbol: 'hvn',
+    symbol: 'hvq',
     addressTypes: {prod: ['28', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }, {
