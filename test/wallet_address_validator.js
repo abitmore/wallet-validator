@@ -562,11 +562,11 @@ describe('WAValidator.validate()', function () {
             valid('EMMP65RxczS2EPSNQyZ5h83qpeX3Quktf3', 'EMC');
         });
 
-        it('should return true for correct HiveCoin addresses', function () {
+        it('should return true for correct HiveCoin HVQ addresses', function () {
             valid('HMgF4B7sTrvEa8Bx1LqwARWVQhwnFVWHhE', 'hivecoin');
             valid('HGwYYA3NPuTYFyZ2hj9mQFb4SYE8dSfji3', 'hivecoin');
-            valid('HCNjL8qAyHNXZqBBCdMKcZurJCHPWk9wMi', 'hvn');
-            valid('HBDKG9NCo4Dt3WmLrnSiZJGHcQK1GFWfuf', 'HVN');
+            valid('HCNjL8qAyHNXZqBBCdMKcZurJCHPWk9wMi', 'hvq');
+            valid('HBDKG9NCo4Dt3WmLrnSiZJGHcQK1GFWfuf', 'HVQ');
         });
 
         it('should return true for correct Binance Coin addresses', () => {
