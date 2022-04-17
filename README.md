@@ -93,7 +93,7 @@ npm install --save wallet-validator
 * DeepOnion/ONION, `'deeponion'` or `'ONION'`
 * Bitcoinrand/BZAR, `'bitcoinrand'` or `'BZAR'`
 * Emercoin/EMC, `'emercoin'` or `'EMC'`
-* HiveCoin/HVN, `'hivecoin'` or `'HVN'`
+* HiveCoin/HVQ, `'hivecoin'` or `'HVQ'`
 * BinanceCoin/BNB, `'binancecoin'` or `'BNB'`
 * PIVX/PIVX, `'pivx'` or `'PIVX'`
 * Raptoreum/RTM, `'rtm'` or `'RTM'`
