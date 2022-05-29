@@ -97,6 +97,7 @@ npm install --save wallet-validator
 * BinanceCoin/BNB, `'binancecoin'` or `'BNB'`
 * PIVX/PIVX, `'pivx'` or `'PIVX'`
 * Raptoreum/RTM, `'rtm'` or `'RTM'`
+* ReddCoin/RDD, `'rdd'` or `'rdd'`
 
 ### Usage example
 
