@@ -344,6 +344,11 @@ var CURRENCIES = [{
     symbol: 'rtm',
     addressTypes: {prod: ['3c', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+}, {
+    name: 'reddcoin',
+    symbol: 'rdd',
+    addressTypes: {prod: ['3d', 'bd'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
 }
 ];
 
