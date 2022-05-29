@@ -6919,7 +6919,7 @@ var CURRENCIES = [{
     validator: BTCValidator
 }, {
     name: 'hivecoin',
-    symbol: 'hvn',
+    symbol: 'hvq',
     addressTypes: {prod: ['28', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }, {
@@ -6935,6 +6935,11 @@ var CURRENCIES = [{
     name: 'raptoreum',
     symbol: 'rtm',
     addressTypes: {prod: ['3c', '80'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'reddcoin',
+    symbol: 'rdd',
+    addressTypes: {prod: ['3d', 'bd'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }
 ];
