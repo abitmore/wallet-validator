@@ -588,6 +588,13 @@ describe('WAValidator.validate()', function () {
             valid('RN8n9x9DHzaq3tD7Dm3rzaU1JusSx9ZG7G', 'raptoreum');
         });
 
+        it('should return true for correct ReddCoin addresses', function () {
+            valid('RkLdxQfBXow3KU1HvT3fAfbKAF2DxM6uHd', 'rdd');
+            valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'RDD');
+            valid('RrarkPQxHhTcPDKi2omJPHV1TFNMkWM3Cv', 'rdd');
+            valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'reddcoin');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -921,6 +928,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect rtm addresses', function () {
             commonTests('rtm');
+        });
+
+        it('should return false for incorrect rdd addresses', function () {
+            commonTests('rdd');
         });
 
     });
