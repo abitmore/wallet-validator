@@ -595,6 +595,12 @@ describe('WAValidator.validate()', function () {
             valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'reddcoin');
         });
 
+        it('should return true for correct flux addresses', function () {
+            valid('t1KDXgiVGmXiCPYbFnCuGzXqnHX3uLnQccr', 'flux');
+            valid('t1JrHUzZ6ToSAL313QjUS6zYCRrhMArcZy5', 'FLUX');
+            valid('t1U731sGEsYeArCBs55YiDtnvpoJLbCKPBU', 'Flux');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -760,6 +766,13 @@ describe('WAValidator.validate()', function () {
             invalid('t1Y9yhDa5XEjgfnTgZoKddeSiEN1aoLkQxq', 'zcash');
             invalid('t3Yz22vK5z2LcKEdg16Yv4FFneEL1zg9ojd', 'ZEC');
             invalid('t2YNzUUx8mWBCRYPRezvA363EYXyEpHokyi', 'zcash', 'testnet');
+        });
+
+        it('should return false for incorrect flux addresses', function () {
+            commonTests('flux');
+            invalid('t1kDXgiVGmXiCPYbFnCuGzXqnHX3uLnQccr', 'flux');
+            invalid('t1JrHUzZ6ToSAL313QjUS6zYCRrhMArczy5', 'FLUX');
+            invalid('t1U731sGEsYeArCBs55YiDtnvpoJLbCKPBu', 'Flux');
         });
 
         it('should return false for incorrect bitcoinprivate addresses', function () {
