@@ -98,6 +98,7 @@ npm install --save wallet-validator
 * PIVX/PIVX, `'pivx'` or `'PIVX'`
 * Raptoreum/RTM, `'rtm'` or `'RTM'`
 * ReddCoin/RDD, `'rdd'` or `'RDD'`
+* Flux/FLUX, `'flux'` or `'FLUX'`
 
 ### Usage example
 
