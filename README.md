@@ -99,6 +99,7 @@ npm install --save wallet-validator
 * Raptoreum/RTM, `'rtm'` or `'RTM'`
 * ReddCoin/RDD, `'rdd'` or `'RDD'`
 * Flux/FLUX, `'flux'` or `'FLUX'`
+* BlockchainCoinX/XCCX, `'xccx'` or `'XCCX'`
 
 ### Usage example
 
