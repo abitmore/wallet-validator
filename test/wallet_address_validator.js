@@ -487,6 +487,13 @@ describe('WAValidator.validate()', function () {
             valid('XLTXn8NnHTXJJbQ56SNfNs6q6GkFZ5nWe5', 'bccx');
         });
 
+        it('should return true for correct bitconnectx addresses', function () {
+            valid('XJC4A6gHAhRn359ACgNhGK39t3ed8jLKqe', 'XCCX');
+            valid('XVAEfAPbcM7PiPMT3fwsKFfhNHERQMqvQh', 'blockchaincoinx');
+            valid('XZD6sNy6z7wjLhJwKRgxwoxu5yXCqHAUgg', 'xccx');
+            valid('XLTXn8NnHTXJJbQ56SNfNs6q6GkFZ5nWe5', 'xccx');
+        });
+
         it('should return true for correct guapcoin addresses', function () {
             valid('GZYf3w6LMNDuuoSeWQtvJcZhKARhmspS6W', 'GUAP');
             valid('GX7qZcqdAXK38trLpiGZoPj61d4GSaYcEF', 'guapcoin');
@@ -945,6 +952,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect rdd addresses', function () {
             commonTests('rdd');
+        });
+
+        it('should return false for incorrect xccx addresses', function () {
+            commonTests('xccx');
         });
 
     });
