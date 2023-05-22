@@ -100,6 +100,7 @@ npm install --save wallet-validator
 * ReddCoin/RDD, `'rdd'` or `'RDD'`
 * Flux/FLUX, `'flux'` or `'FLUX'`
 * BlockchainCoinX/XCCX, `'xccx'` or `'XCCX'`
+* Radiant/RXD, `'rxd'` or `'RXD'`
 
 ### Usage example
 
