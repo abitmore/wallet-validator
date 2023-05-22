@@ -6941,11 +6941,21 @@ var CURRENCIES = [{
     symbol: 'rdd',
     addressTypes: {prod: ['3d', 'bd'], testnet: ['6f', 'c4']},
     validator: BTCValidator
-},{
+}, {
     name: 'flux',
     symbol: 'flux',
     expectedLength: 26,
     addressTypes: {prod: ['1cb8', '1cbd'], testnet: ['1d25', '1cba']},
+    validator: BTCValidator
+}, {
+    name: 'blockchaincoinx',
+    symbol: 'xccx',
+    addressTypes: {prod: ['4b', 'cb'], testnet: ['6f', 'c4']},
+    validator: BTCValidator
+}, {
+    name: 'radiant',
+    symbol: 'rxd',
+    addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }
 
