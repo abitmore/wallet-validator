@@ -608,6 +608,12 @@ describe('WAValidator.validate()', function () {
             valid('t1U731sGEsYeArCBs55YiDtnvpoJLbCKPBU', 'Flux');
         });
 
+        it('should return true for correct Radiant addresses', function () {
+            valid('1EgCUSZQYNfnNjRmuQFcjUn3ehRDqQ92E3', 'rxd');
+            valid('1J2d9e7xswXvm9zVecudxxU5rvpnv5w95S', 'RXD');
+            valid('1A3u46bR9xHAYde9npChPNrookkbLe3XwG', 'Radiant');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -956,6 +962,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect xccx addresses', function () {
             commonTests('xccx');
+        });
+
+        it('should return false for incorrect rxd addresses', function () {
+            commonTests('rxd');
         });
 
     });
