@@ -565,7 +565,7 @@ describe('WAValidator.validate()', function () {
         it('should return true for correct Emercoin addresses', function () {
             valid('EU9QzrQBgz9T96SviumxtRD3oX3XTr9dD2', 'emercoin');
             valid('EaDuchgXysbGH5zkbwzGvAH5nYLxsNizTq', 'emercoin');
-            valid('EeLeckKqTRvbbyThGhvMYeVWhrCwYb6ev6', 'emc');
+            valid('e7KTxoPjbRqxNeCccHaFkmFBk75iNL48Ld', 'emc');
             valid('EMMP65RxczS2EPSNQyZ5h83qpeX3Quktf3', 'EMC');
         });
 
