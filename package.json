@@ -1,8 +1,9 @@
 {
     "name": "wallet-validator",
-    "version": "0.3.16",
+    "version": "0.3.17",
     "description": "Fast Wallet address validator for Bitcoin and other Altcoins.",
     "keywords": [
+        "emercoin",
         "flux",
         "smartholdem",
         "sth",

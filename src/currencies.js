@@ -323,7 +323,7 @@ var CURRENCIES = [{
 }, {
     name: 'emercoin',
     symbol: 'emc',
-    addressTypes: {prod: ['21', '80'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['5c', '21', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }, {
     name: 'hivecoin',
