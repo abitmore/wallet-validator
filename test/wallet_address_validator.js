@@ -614,6 +614,12 @@ describe('WAValidator.validate()', function () {
             valid('1A3u46bR9xHAYde9npChPNrookkbLe3XwG', 'Radiant');
         });
 
+        it('should return true for correct Pepecoin PEP addresses', function () {
+            valid('Pq8ZboTSZAjPwgBFxKCUyH9r4CU3N9UqTP', 'pep');
+            valid('PqXDo4G31C2mysViyRHLmHtTaVdpKHxDBm', 'PEP');
+            valid('PnBFXec7tVQvndqktsVnkfJGwy63GFnwoo', 'Pepecoin');
+        });
+
     });
 
     describe('invalid results', function () {
@@ -966,6 +972,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect rxd addresses', function () {
             commonTests('rxd');
+        });
+
+        it('should return false for incorrect pep addresses', function () {
+            commonTests('pep');
         });
 
     });
