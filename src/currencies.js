@@ -365,7 +365,13 @@ var CURRENCIES = [{
     symbol: 'rxd',
     addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
     validator: BTCValidator
-}
+},
+    {
+        name: 'pepecoin',
+        symbol: 'pep',
+        addressTypes: {prod: ['38', '16'], testnet: ['71', 'c4']},
+        validator: BTCValidator
+    }
 
 ];
 
