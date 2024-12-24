@@ -101,6 +101,7 @@ npm install --save wallet-validator
 * Flux/FLUX, `'flux'` or `'FLUX'`
 * BlockchainCoinX/XCCX, `'xccx'` or `'XCCX'`
 * Radiant/RXD, `'rxd'` or `'RXD'`
+* Pepecoin/PEP, `'pep'` or `'PEP'`
 
 ### Usage example
 
