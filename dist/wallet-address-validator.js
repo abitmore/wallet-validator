@@ -2942,8 +2942,8 @@ function getAddressType(address, currency) {
         var checksum = cryptoUtils.toHex(decoded.slice(length - 4, length)),
             body = cryptoUtils.toHex(decoded.slice(0, length - 4)),
             goodChecksum = getChecksum(hashFunction, body);
-            console.log(body)
-            console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24))) // first value
+            //console.log(body)
+            //console.log(cryptoUtils.toHex(decoded.slice(0, expectedLength - 24))) // first value
         return checksum === goodChecksum ? cryptoUtils.toHex(decoded.slice(0, expectedLength - 24)) : null;
     }
 
@@ -6916,7 +6916,7 @@ var CURRENCIES = [{
 }, {
     name: 'emercoin',
     symbol: 'emc',
-    addressTypes: {prod: ['21', '80'], testnet: ['6f', 'c4']},
+    addressTypes: {prod: ['5c', '21', '80'], testnet: ['6f', 'c4']},
     validator: BTCValidator
 }, {
     name: 'hivecoin',
@@ -6958,7 +6958,13 @@ var CURRENCIES = [{
     symbol: 'rxd',
     addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
     validator: BTCValidator
-}
+},
+    {
+        name: 'pepecoin',
+        symbol: 'pep',
+        addressTypes: {prod: ['38', '16'], testnet: ['71', 'c4']},
+        validator: BTCValidator
+    }
 
 ];
 
@@ -7257,18 +7263,18 @@ module.exports = {
 },{"./crypto/utils":45}],53:[function(require,module,exports){
 const currencies = require('./currencies');
 
-let DEFAULT_CURRENCY_NAME = 'bitcoin';
+var DEFAULT_CURRENCY_NAME = 'bitcoin';
 
 module.exports = {
     validate: function (address, currencyNameOrSymbol, networkType) {
-        const currency = currencies.getByNameOrSymbol(currencyNameOrSymbol || DEFAULT_CURRENCY_NAME);
+        var currency = currencies.getByNameOrSymbol(currencyNameOrSymbol || DEFAULT_CURRENCY_NAME);
         if (currency.validator) {
             return currency.validator.isValidAddress(address, currency, networkType);
         }
         throw new Error('Missing validator for currency: ' + currencyNameOrSymbol);
     },
     validator: function (address, currencyNameOrSymbol, networkType) {
-        const currency = currencies.getByNameOrSymbol(currencyNameOrSymbol || DEFAULT_CURRENCY_NAME);
+        var currency = currencies.getByNameOrSymbol(currencyNameOrSymbol || DEFAULT_CURRENCY_NAME);
 
         if (currency.validator) {
             return currency.validator.isValidAddress(address, currency, networkType);
